@@ -13,11 +13,13 @@ $input = '01110000 01110010 01101001 01101110 01110100 00100000 01101111 0111010
 $binNumbers = explode(' ', $input);
 
 foreach ($binNumbers as $binNumber) {
-    echo chr(bindec($binNumber)), PHP_EOL;
+    $code = bindec($binNumber);
+    echo $binNumber, 'b = ', $code, 'd = ', chr($code), PHP_EOL;
 }
 
-//2. Says: "print out your name with one of php loops". Ok, no problem :)
+echo PHP_EOL;
 
+//2. Says: "print out your name with one of php loops". Ok, no problem :)
 $chars = ['h', 'o', 'v', 's', 'e', 'p'];
 
 foreach ($chars as $char) {
