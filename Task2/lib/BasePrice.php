@@ -8,6 +8,8 @@
 
 class BasePrice implements Calculable, DayAndHourAware {
 
+    const FRIDAY = 5;
+
     const BASIC_MULTIPLIER = 0.11;
 
     const CUSTOM_MULTIPLIER = 0.13;

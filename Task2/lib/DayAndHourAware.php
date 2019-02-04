@@ -8,8 +8,6 @@
 
 interface DayAndHourAware {
 
-    const FRIDAY = 5;
-
     public function setDayAndHour($day, $hour);
 
 }
